@@ -7,6 +7,9 @@
     padding: 10px;
     background-color: powderblue;
 }
+body{
+    font-family: Helvetica, serif;
+}
 h1 {
     display: flex;
     justify-content: center;
@@ -45,12 +48,69 @@ h1 {
     text-align: left;
     padding: 5px;
     margin: 5px;
+    font-style: italic;
+}
+footer{
+    margin: 10px
 }
 
 }
 @media screen and (min-width: 992px) {
     .hidden-on-desktop{
         display: none;
+    }
+    h1{
+        margin: 20px;
+    }
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        font-family: Helvetica, Serif;
+    }
+    nav{
+        flex-grow: 1;
+        position: relative;
+        right: 10px;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-links li{
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0;
+    }
+    .header-img{
+        /*justify-content: center;*/
+        width: calc(100% - 40px);
+    }
+    .header-img img{
+        width: 100%;
+        margin: 0 20px;
+    }
+    .main{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+    .main h2, .sub-section h2{
+        margin: 20px;
+    }
+    .main p,.sub-section p{
+        margin: 20px;
+    }
+    .sub-section{
+        font-style: italic;
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+    }
+    footer{
+        margin: 20px;
     }
 
 }
